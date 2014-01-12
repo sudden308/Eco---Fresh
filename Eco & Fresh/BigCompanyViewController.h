@@ -99,6 +99,9 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
 
+-(UIButton *) generateBtn: (CGRect *)area
+               background:(UIImage*)img
+                   action: (NSString *)actionName;
 
 
 

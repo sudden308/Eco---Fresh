@@ -30,7 +30,7 @@
                                     <color key="titleShadowColor" red="0.80000000000000004" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ggx-kZ-TYl" kind="push" id="Sf9-or-D7O"/>
+                                    <segue destination="ggx-kZ-TYl" kind="push" id="0Kb-he-uLO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uho-Ko-8Lm">
@@ -42,9 +42,6 @@
                                     <color key="titleColor" red="0.80000000000000004" green="1" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.80000000000000004" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="Y46-X3-GZd" kind="push" id="WQh-St-vl9"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zc2-W1-TPA">
                                 <rect key="frame" x="285" y="719" width="168" height="35"/>
@@ -55,9 +52,6 @@
                                     <color key="titleColor" red="0.80000000000000004" green="1" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.80000000000000004" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="7eZ-y1-RVo" kind="push" id="YKG-J3-GMB"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -69,6 +63,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="813" y="-1114"/>
+        </scene>
+        <!--Big Company View Controller2-->
+        <scene sceneID="TJT-U4-Gp6">
+            <objects>
+                <viewController id="2RQ-IH-kQB" customClass="BigCompanyViewController2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fcV-oC-YM5"/>
+                        <viewControllerLayoutGuide type="bottom" id="KWb-It-QSz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nGw-kQ-5FO">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ym6-Ul-OQC">
+                                <rect key="frame" x="0.0" y="20" width="1150" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2RQ-IH-kQB" id="NGf-0g-VNw"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ADV-rb-Tvr"/>
+                    <connections>
+                        <outlet property="scroll" destination="ym6-Ul-OQC" id="I2A-sz-C0O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Rn-Kh-exy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2086" y="-1474"/>
         </scene>
         <!--Big Company View Controller - Details-->
         <scene sceneID="kMP-iq-4Dz">
@@ -313,7 +338,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contentbox.png" translatesAutoresizingMaskIntoConstraints="NO" id="uQg-6y-61q">
-                                <rect key="frame" x="146" y="640" width="467" height="126"/>
+                                <rect key="frame" x="151" y="641" width="467" height="126"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="long.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tnc-cD-OMs">
@@ -374,11 +399,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contentbox.png" translatesAutoresizingMaskIntoConstraints="NO" id="HnM-Vi-36w">
-                                <rect key="frame" x="154" y="138" width="465" height="165"/>
+                                <rect key="frame" x="154" y="140" width="465" height="165"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contentbox.png" translatesAutoresizingMaskIntoConstraints="NO" id="GNi-Rb-K51">
-                                <rect key="frame" x="152" y="380" width="463" height="190"/>
+                                <rect key="frame" x="154" y="380" width="463" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -426,7 +451,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8EZ-iJ-Rdk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3190" y="-2803"/>
+            <point key="canvasLocation" x="1926" y="-1637"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RaU-ri-mHV">
@@ -446,447 +471,8 @@
             </objects>
             <point key="canvasLocation" x="-200" y="-118"/>
         </scene>
-        <!--Small Company View Controller - Details-->
-        <scene sceneID="qRG-1D-MMS">
-            <objects>
-                <viewController id="7eZ-y1-RVo" customClass="SmallCompanyViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="dph-Jc-cRm"/>
-                        <viewControllerLayoutGuide type="bottom" id="ZUj-gu-gS5"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="4ln-YA-ey0">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YdR-OF-fKM">
-                                <rect key="frame" x="49" y="114" width="75" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Premium" backgroundImage="J1-green-normal.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="premiumImageBtnAction:" destination="7eZ-y1-RVo" eventType="touchUpInside" id="nQz-f0-tfQ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQ8-zb-W9i">
-                                <rect key="frame" x="276" y="114" width="84" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Standard" backgroundImage="J1-green-normal.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="standardImageBtnAction:" destination="7eZ-y1-RVo" eventType="touchUpInside" id="K4r-T7-Fki"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woQ-iJ-XRS">
-                                <rect key="frame" x="517" y="115" width="81" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Economy" backgroundImage="J1-green-normal.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="economyImageBtnAction:" destination="7eZ-y1-RVo" eventType="touchUpInside" id="Z7V-9x-rqX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPF-BT-ZLW">
-                                <rect key="frame" x="49" y="168" width="75" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Select" backgroundImage="select.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="premiumSelectBtnAction:" destination="7eZ-y1-RVo" eventType="touchUpInside" id="XDa-YN-ybg"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Enr-3g-QLV">
-                                <rect key="frame" x="276" y="168" width="84" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.80000000000000004" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Select" backgroundImage="select.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="standardSelectAction:" destination="7eZ-y1-RVo" eventType="touchUpInside" id="fBi-xM-tKQ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="toV-Ik-bgR">
-                                <rect key="frame" x="517" y="168" width="81" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.80000000000000004" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Select" backgroundImage="select.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="economySelectAction:" destination="7eZ-y1-RVo" eventType="touchUpInside" id="D8k-tk-0AT"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7io-DY-DhA">
-                                <rect key="frame" x="49" y="355" width="61" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                <state key="normal" title="200" backgroundImage="200_normal.png">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="amount200BtnAction:" destination="7eZ-y1-RVo" eventType="touchUpInside" id="rEG-pl-tdg"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Mr-nQ-Sae">
-                                <rect key="frame" x="141" y="329" width="67" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                <state key="normal" title="500" backgroundImage="500_normal.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="amount500BtnAction:" destination="7eZ-y1-RVo" eventType="touchUpInside" id="Nd0-LX-xrN"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lC6-8K-I6M">
-                                <rect key="frame" x="247" y="305" width="76" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                <state key="normal" title="1000" backgroundImage="1000_normal.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="amount1000BtnAction:" destination="7eZ-y1-RVo" eventType="touchUpInside" id="QIO-Cx-646"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjr-ZL-Hxf">
-                                <rect key="frame" x="373" y="287" width="86" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                <state key="normal" title="2000" backgroundImage="2000_normal.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="amount2000Action:" destination="7eZ-y1-RVo" eventType="touchUpInside" id="0ue-88-DMN"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VyS-Ug-AZ5">
-                                <rect key="frame" x="508" y="268" width="90" height="127"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                <state key="normal" title="3000" backgroundImage="3000_normal.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="amount3000Action:" destination="7eZ-y1-RVo" eventType="touchUpInside" id="bAs-2y-txR"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3i-aC-z0F">
-                                <rect key="frame" x="49" y="491" width="75" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                <state key="normal" title="1 Year" backgroundImage="J1-blue-normal.png">
-                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="period1YearAction:" destination="7eZ-y1-RVo" eventType="touchUpInside" id="p2R-sm-Q4e"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEk-aw-E2e">
-                                <rect key="frame" x="276" y="491" width="84" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                <state key="normal" title="2 Years" backgroundImage="J1-blue-normal.png">
-                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="period2YearAction:" destination="7eZ-y1-RVo" eventType="touchUpInside" id="npm-NT-sh0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjO-AM-VQ7">
-                                <rect key="frame" x="517" y="491" width="81" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                <state key="normal" title="3 Years" backgroundImage="J1-blue-normal.png">
-                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="period3YearAction:" destination="7eZ-y1-RVo" eventType="touchUpInside" id="1Xc-Ty-WOE"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCH-D8-tcW">
-                                <rect key="frame" x="49" y="634" width="549" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.20000000000000001" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAk-Ck-9qY">
-                                <rect key="frame" x="490" y="590" width="108" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                <state key="normal" title="Get Price" backgroundImage="J1-red-normal.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="getPriceBtnAction:" destination="7eZ-y1-RVo" eventType="touchUpInside" id="QuY-GK-1Ok"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Details" id="fBW-gk-LTV"/>
-                    <connections>
-                        <outlet property="amount1000Btn" destination="lC6-8K-I6M" id="YUg-BM-tsh"/>
-                        <outlet property="amount2000Btn" destination="pjr-ZL-Hxf" id="qCl-Ic-hfY"/>
-                        <outlet property="amount200Btn" destination="7io-DY-DhA" id="OiR-21-r3W"/>
-                        <outlet property="amount3000Btn" destination="VyS-Ug-AZ5" id="uEg-bd-6Fp"/>
-                        <outlet property="amount500Btn" destination="3Mr-nQ-Sae" id="8Ou-Yl-Kwy"/>
-                        <outlet property="economyImageBtn" destination="woQ-iJ-XRS" id="qjc-8W-dWP"/>
-                        <outlet property="economySelectBtn" destination="toV-Ik-bgR" id="8Np-TZ-WIh"/>
-                        <outlet property="getPriceBtn" destination="qAk-Ck-9qY" id="KUI-uV-BCd"/>
-                        <outlet property="period1Year" destination="T3i-aC-z0F" id="sn4-aZ-6kC"/>
-                        <outlet property="period2Year" destination="bEk-aw-E2e" id="1NY-fl-rIM"/>
-                        <outlet property="period3Year" destination="pjO-AM-VQ7" id="xmz-hl-YbU"/>
-                        <outlet property="premiumImageBtn" destination="YdR-OF-fKM" id="EVu-Dl-bRa"/>
-                        <outlet property="premiumSelectBtn" destination="LPF-BT-ZLW" id="cR6-aL-mXf"/>
-                        <outlet property="priceLabel" destination="gCH-D8-tcW" id="eXd-We-o6I"/>
-                        <outlet property="standardImageBtn" destination="rQ8-zb-W9i" id="g4Z-et-N3B"/>
-                        <outlet property="standardSelectBtn" destination="Enr-3g-QLV" id="HF3-Hm-Igg"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sFm-yn-42b" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1882" y="118"/>
-        </scene>
-        <!--Medium Company View Controller - Details-->
-        <scene sceneID="1bN-ax-DIS">
-            <objects>
-                <viewController id="Y46-X3-GZd" customClass="MediumCompanyViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="oLq-BB-nmb"/>
-                        <viewControllerLayoutGuide type="bottom" id="R8g-VQ-5Qt"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="fcw-Me-U6O">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HhP-fs-XXs">
-                                <rect key="frame" x="49" y="114" width="75" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <state key="normal" title="Premium" backgroundImage="J1-green-normal.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="premiumImageBtnAction:" destination="Y46-X3-GZd" eventType="touchUpInside" id="7dA-nW-fvt"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ium-NO-nBU">
-                                <rect key="frame" x="276" y="114" width="84" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <state key="normal" title="Standard" backgroundImage="J1-green-normal.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="standardImageBtnAction:" destination="Y46-X3-GZd" eventType="touchUpInside" id="JeI-oT-RO5"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bv7-pJ-k8X">
-                                <rect key="frame" x="517" y="115" width="81" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <state key="normal" title="Economy" backgroundImage="J1-green-normal.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="economyImageBtnAction:" destination="Y46-X3-GZd" eventType="touchUpInside" id="jRO-4f-mgw"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2h-nM-uyh">
-                                <rect key="frame" x="49" y="168" width="75" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Select" backgroundImage="select.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="premiumSelectBtnAction:" destination="Y46-X3-GZd" eventType="touchUpInside" id="O0o-n9-Pbe"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Lb-UG-cUn">
-                                <rect key="frame" x="276" y="168" width="84" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Select" backgroundImage="select.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="standardSelectAction:" destination="Y46-X3-GZd" eventType="touchUpInside" id="Rye-fk-mar"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWX-r0-QfO">
-                                <rect key="frame" x="517" y="168" width="81" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Select" backgroundImage="select.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="economySelectAction:" destination="Y46-X3-GZd" eventType="touchUpInside" id="5R1-Hy-jAH"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PN3-Gi-2wl">
-                                <rect key="frame" x="49" y="355" width="61" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                <state key="normal" title="200" backgroundImage="200_normal.png">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="amount200BtnAction:" destination="Y46-X3-GZd" eventType="touchUpInside" id="YKz-jr-Dbd"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bH7-OI-gZt">
-                                <rect key="frame" x="141" y="329" width="67" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                <state key="normal" title="500" backgroundImage="500_normal.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="amount500BtnAction:" destination="Y46-X3-GZd" eventType="touchUpInside" id="ZoL-2B-gdp"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DEJ-ic-goS">
-                                <rect key="frame" x="247" y="305" width="76" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                <state key="normal" title="1000" backgroundImage="1000_normal.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="amount1000BtnAction:" destination="Y46-X3-GZd" eventType="touchUpInside" id="24X-hc-5I4"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zuC-RK-3qc">
-                                <rect key="frame" x="371" y="287" width="86" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                <state key="normal" title="2000" backgroundImage="2000_normal.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="amount2000Action:" destination="Y46-X3-GZd" eventType="touchUpInside" id="3XG-fg-0tz"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1T-tH-8No">
-                                <rect key="frame" x="508" y="268" width="90" height="127"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                <state key="normal" title="3000" backgroundImage="3000_normal.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="amount3000Action:" destination="Y46-X3-GZd" eventType="touchUpInside" id="kA1-mi-fZ9"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDb-xq-Ydl">
-                                <rect key="frame" x="49" y="491" width="75" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                <state key="normal" title="1 Year" backgroundImage="J1-blue-normal.png">
-                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="period1YearAction:" destination="Y46-X3-GZd" eventType="touchUpInside" id="Nee-GY-Kfh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAr-J2-oGj">
-                                <rect key="frame" x="276" y="491" width="84" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                <state key="normal" title="2 Years" backgroundImage="J1-blue-normal.png">
-                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="period2YearAction:" destination="Y46-X3-GZd" eventType="touchUpInside" id="pug-T9-c18"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vld-FU-2Wy">
-                                <rect key="frame" x="517" y="491" width="81" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                <state key="normal" title="3 Years" backgroundImage="J1-blue-normal.png">
-                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="period3YearAction:" destination="Y46-X3-GZd" eventType="touchUpInside" id="jza-bu-R9n"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJu-V7-Jft">
-                                <rect key="frame" x="49" y="634" width="549" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.20000000000000001" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56S-9p-8bI">
-                                <rect key="frame" x="447" y="581" width="151" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
-                                <state key="normal" title="Get Price" backgroundImage="J1-red-normal.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="getPriceBtnAction:" destination="Y46-X3-GZd" eventType="touchUpInside" id="Uhq-wj-vVw"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Details" id="DPc-Si-pg5"/>
-                    <connections>
-                        <outlet property="amount1000Btn" destination="DEJ-ic-goS" id="ww5-u0-z4U"/>
-                        <outlet property="amount2000Btn" destination="zuC-RK-3qc" id="dzy-pP-WeC"/>
-                        <outlet property="amount200Btn" destination="PN3-Gi-2wl" id="ZVl-8Q-FUh"/>
-                        <outlet property="amount3000Btn" destination="x1T-tH-8No" id="bdA-UQ-C3N"/>
-                        <outlet property="amount500Btn" destination="bH7-OI-gZt" id="bLk-DM-7yd"/>
-                        <outlet property="economyImageBtn" destination="Bv7-pJ-k8X" id="jsf-F5-gSX"/>
-                        <outlet property="economySelectBtn" destination="PWX-r0-QfO" id="eJ2-fa-Z86"/>
-                        <outlet property="getPriceBtn" destination="56S-9p-8bI" id="rFK-NI-7I5"/>
-                        <outlet property="period1Year" destination="sDb-xq-Ydl" id="qMt-2s-AU5"/>
-                        <outlet property="period2Year" destination="aAr-J2-oGj" id="hEA-i2-NCb"/>
-                        <outlet property="period3Year" destination="Vld-FU-2Wy" id="3OS-lJ-Iab"/>
-                        <outlet property="premiumImageBtn" destination="HhP-fs-XXs" id="aOZ-kQ-wfR"/>
-                        <outlet property="premiumSelectBtn" destination="N2h-nM-uyh" id="N9T-5l-LsG"/>
-                        <outlet property="priceLabel" destination="lJu-V7-Jft" id="qfd-yh-tY8"/>
-                        <outlet property="standardImageBtn" destination="Ium-NO-nBU" id="8a2-kL-2oi"/>
-                        <outlet property="standardSelectBtn" destination="7Lb-UG-cUn" id="bVy-K2-7d4"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DID-vI-S3w" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2854" y="-958"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="1000_normal.png" width="63" height="91"/>
-        <image name="2000_normal.png" width="84" height="118"/>
-        <image name="200_normal.png" width="40" height="40"/>
-        <image name="3000_normal.png" width="96" height="145"/>
-        <image name="500_normal.png" width="57" height="63"/>
-        <image name="J1-blue-normal.png" width="36" height="31"/>
-        <image name="J1-green-normal.png" width="60" height="60"/>
-        <image name="J1-red-normal.png" width="27" height="44"/>
         <image name="background.jpg" width="766" height="410"/>
         <image name="contentbox.png" width="215" height="62"/>
         <image name="icon.png" width="120" height="120"/>

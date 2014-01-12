@@ -803,4 +803,15 @@ static CGRect oldframe;
     return newImage;
 }
 
+-(UIButton *) generateBtn: (CGRect *)area
+               background:(UIImage*)img
+                   action: (NSString *)actionName
+{
+    UIButton *btn = [[UIButton alloc]init];
+    btn.frame = *(area);
+    [btn addTarget:self action:@selector(actionName) forControlEvents:UIControlEventTouchUpInside];
+    
+    return btn;
+}
+
 @end

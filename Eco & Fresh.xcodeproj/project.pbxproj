@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5836102D1882931400671304 /* BigCompanyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5836102C1882931400671304 /* BigCompanyViewController.m */; };
+		5836102E1882931400671304 /* BigCompanyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5836102C1882931400671304 /* BigCompanyViewController.m */; };
 		583AC2FC188201D700A5407A /* J1-green-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 583AC2FB188201D700A5407A /* J1-green-selected@2x.png */; };
 		583AC2FD188201D700A5407A /* J1-green-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 583AC2FB188201D700A5407A /* J1-green-selected@2x.png */; };
 		583AC2FF1882023800A5407A /* J1-green-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 583AC2FE1882023800A5407A /* J1-green-normal@2x.png */; };
@@ -79,8 +81,6 @@
 		588F9F7B1866994100BA3C12 /* standard.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 588F9F711866994100BA3C12 /* standard.jpg */; };
 		588F9F7D1866998A00BA3C12 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 588F9F7C1866998A00BA3C12 /* background.jpg */; };
 		588F9F7E1866998A00BA3C12 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 588F9F7C1866998A00BA3C12 /* background.jpg */; };
-		588F9F8A18669F6000BA3C12 /* BigCompanyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588F9F8918669F6000BA3C12 /* BigCompanyViewController.m */; };
-		588F9F8B18669F6000BA3C12 /* BigCompanyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588F9F8918669F6000BA3C12 /* BigCompanyViewController.m */; };
 		588F9F8E18669F7B00BA3C12 /* SmallCompanyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588F9F8D18669F7A00BA3C12 /* SmallCompanyViewController.m */; };
 		588F9F8F18669F7B00BA3C12 /* SmallCompanyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588F9F8D18669F7A00BA3C12 /* SmallCompanyViewController.m */; };
 		588F9F9218669F8E00BA3C12 /* MediumCompanyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588F9F9118669F8E00BA3C12 /* MediumCompanyViewController.m */; };
@@ -89,6 +89,7 @@
 		588F9FAE18670C1600BA3C12 /* imageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 588F9FAC18670C1600BA3C12 /* imageView.m */; };
 		5892393918681D1800A7BA93 /* splash-landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 5892393818681D1800A7BA93 /* splash-landscape.png */; };
 		5892393A18681D1800A7BA93 /* splash-landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 5892393818681D1800A7BA93 /* splash-landscape.png */; };
+		589F0D2E1882547400730D47 /* BigCompanyViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 589F0D2D1882547400730D47 /* BigCompanyViewController2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5836102B1882930900671304 /* BigCompanyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigCompanyViewController.h; sourceTree = "<group>"; };
+		5836102C1882931400671304 /* BigCompanyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigCompanyViewController.m; sourceTree = "<group>"; };
 		583AC2FB188201D700A5407A /* J1-green-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "J1-green-selected@2x.png"; sourceTree = "<group>"; };
 		583AC2FE1882023800A5407A /* J1-green-normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "J1-green-normal@2x.png"; sourceTree = "<group>"; };
 		583AC3011882047F00A5407A /* J1-blue-normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "J1-blue-normal@2x.png"; sourceTree = "<group>"; };
@@ -150,8 +153,6 @@
 		588F9F701866994100BA3C12 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splash.png; path = ../../Downloads/eco/splash.png; sourceTree = "<group>"; };
 		588F9F711866994100BA3C12 /* standard.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = standard.jpg; path = ../../Downloads/eco/standard.jpg; sourceTree = "<group>"; };
 		588F9F7C1866998A00BA3C12 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = ../../Downloads/background.jpg; sourceTree = "<group>"; };
-		588F9F8818669F6000BA3C12 /* BigCompanyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BigCompanyViewController.h; path = ../BigCompanyViewController.h; sourceTree = "<group>"; };
-		588F9F8918669F6000BA3C12 /* BigCompanyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BigCompanyViewController.m; path = ../BigCompanyViewController.m; sourceTree = "<group>"; };
 		588F9F8C18669F7A00BA3C12 /* SmallCompanyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmallCompanyViewController.h; sourceTree = "<group>"; };
 		588F9F8D18669F7A00BA3C12 /* SmallCompanyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmallCompanyViewController.m; sourceTree = "<group>"; };
 		588F9F9018669F8E00BA3C12 /* MediumCompanyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediumCompanyViewController.h; sourceTree = "<group>"; };
@@ -159,6 +160,8 @@
 		588F9FAB18670C1600BA3C12 /* imageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imageView.h; path = ../imageView.h; sourceTree = "<group>"; };
 		588F9FAC18670C1600BA3C12 /* imageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = imageView.m; path = ../imageView.m; sourceTree = "<group>"; };
 		5892393818681D1800A7BA93 /* splash-landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splash-landscape.png"; path = "../../Downloads/eco/splash-landscape.png"; sourceTree = "<group>"; };
+		589F0D2C1882547400730D47 /* BigCompanyViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigCompanyViewController2.h; sourceTree = "<group>"; };
+		589F0D2D1882547400730D47 /* BigCompanyViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigCompanyViewController2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,12 +227,14 @@
 				588F9F4D1866988800BA3C12 /* ViewController.h */,
 				588F9F4E1866988800BA3C12 /* ViewController.m */,
 				588F9F501866988800BA3C12 /* Images.xcassets */,
-				588F9F8818669F6000BA3C12 /* BigCompanyViewController.h */,
+				589F0D2C1882547400730D47 /* BigCompanyViewController2.h */,
+				589F0D2D1882547400730D47 /* BigCompanyViewController2.m */,
 				588F9F8C18669F7A00BA3C12 /* SmallCompanyViewController.h */,
 				588F9F8D18669F7A00BA3C12 /* SmallCompanyViewController.m */,
 				588F9F9018669F8E00BA3C12 /* MediumCompanyViewController.h */,
 				588F9F9118669F8E00BA3C12 /* MediumCompanyViewController.m */,
-				588F9F8918669F6000BA3C12 /* BigCompanyViewController.m */,
+				5836102B1882930900671304 /* BigCompanyViewController.h */,
+				5836102C1882931400671304 /* BigCompanyViewController.m */,
 				588F9FAB18670C1600BA3C12 /* imageView.h */,
 				588F9FAC18670C1600BA3C12 /* imageView.m */,
 				588F9F3F1866988800BA3C12 /* Supporting Files */,
@@ -456,11 +461,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				589F0D2E1882547400730D47 /* BigCompanyViewController2.m in Sources */,
 				588F9FAD18670C1600BA3C12 /* imageView.m in Sources */,
 				588F9F4F1866988800BA3C12 /* ViewController.m in Sources */,
 				588F9F9218669F8E00BA3C12 /* MediumCompanyViewController.m in Sources */,
 				588F9F8E18669F7B00BA3C12 /* SmallCompanyViewController.m in Sources */,
-				588F9F8A18669F6000BA3C12 /* BigCompanyViewController.m in Sources */,
+				5836102D1882931400671304 /* BigCompanyViewController.m in Sources */,
 				588F9F491866988800BA3C12 /* AppDelegate.m in Sources */,
 				588F9F451866988800BA3C12 /* main.m in Sources */,
 			);
@@ -473,8 +479,8 @@
 				588F9F641866988900BA3C12 /* Eco___FreshTests.m in Sources */,
 				588F9FAE18670C1600BA3C12 /* imageView.m in Sources */,
 				588F9F8F18669F7B00BA3C12 /* SmallCompanyViewController.m in Sources */,
-				588F9F8B18669F6000BA3C12 /* BigCompanyViewController.m in Sources */,
 				588F9F9318669F8E00BA3C12 /* MediumCompanyViewController.m in Sources */,
+				5836102E1882931400671304 /* BigCompanyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
