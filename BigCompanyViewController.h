@@ -36,6 +36,36 @@
 @property NSString *imageNameOfNext;
 @property UIButton *selectBtn, *cancelBtn;
 @property float lastScale, lastRotattion, firstX, firstY;
+@property (weak, nonatomic) IBOutlet UILabel *totalPayLabel;
+@property (weak, nonatomic) IBOutlet UILabel *perTowelPrice;
+@property (weak, nonatomic) IBOutlet UILabel *perWeekPrice;
+
+
+@property (weak, nonatomic) IBOutlet UIImageView *image1;
+@property (weak, nonatomic) IBOutlet UIImageView *image2;
+@property (weak, nonatomic) IBOutlet UILabel *label1;
+@property (weak, nonatomic) IBOutlet UILabel *label2;
+@property (weak, nonatomic) IBOutlet UILabel *label3;
+
+@property (weak, nonatomic) IBOutlet UIImageView *image3;
+@property (weak, nonatomic) IBOutlet UIImageView *image4;
+@property (weak, nonatomic) IBOutlet UILabel *label4;
+@property (weak, nonatomic) IBOutlet UILabel *label5;
+@property (weak, nonatomic) IBOutlet UILabel *label6;
+@property (weak, nonatomic) IBOutlet UILabel *label7;
+@property (weak, nonatomic) IBOutlet UILabel *label8;
+
+@property (weak, nonatomic) IBOutlet UIImageView *image5;
+@property (weak, nonatomic) IBOutlet UIImageView *image6;
+@property (weak, nonatomic) IBOutlet UILabel *label9;
+@property (weak, nonatomic) IBOutlet UILabel *label10;
+@property (weak, nonatomic) IBOutlet UILabel *label11;
+
+@property (weak, nonatomic) IBOutlet UIScrollView *scroll;
+
+
+
+
 
 - (IBAction)premiumImageBtnAction:(id)sender;
 - (IBAction)standardImageBtnAction:(id)sender;
@@ -64,6 +94,8 @@
 - (void) nextImage: (UITapGestureRecognizer*)tap;
 
 - (void) showPrice: (NSString *)product second: (NSString *)amount third: (NSString *)period;
+-(UIImage *)colorizeImage:(UIImage *)baseImage color:(UIColor *)theColor;
+-(void) allIntoScollView;
 
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
 

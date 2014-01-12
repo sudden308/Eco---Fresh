@@ -39,9 +39,11 @@ static CGRect oldframe;
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
+    /*
     amount200Btn.layer.masksToBounds = YES;
     amount200Btn.layer.cornerRadius = 30;
+    
+    
     
     amount500Btn.layer.masksToBounds = YES;
     amount500Btn.layer.cornerRadius = 30;
@@ -57,36 +59,40 @@ static CGRect oldframe;
     
     premiumSelectBtn.layer.masksToBounds = YES;
     premiumSelectBtn.layer.cornerRadius = 10;
+    */
     
-    premiumImageBtn.layer.masksToBounds = YES;
-    premiumImageBtn.layer.cornerRadius = 20;
+    // premiumImageBtn.layer.masksToBounds = YES;
+    // premiumImageBtn.layer.cornerRadius = 20;
+    
+    
     
     standardSelectBtn.layer.masksToBounds = YES;
     standardSelectBtn.layer.cornerRadius = 10;
     
-    standardImageBtn.layer.masksToBounds = YES;
-    standardImageBtn.layer.cornerRadius = 20;
+    // standardImageBtn.layer.masksToBounds = YES;
+    // standardImageBtn.layer.cornerRadius = 20;
     
     economySelectBtn.layer.masksToBounds = YES;
     economySelectBtn.layer.cornerRadius = 10;
     
-    economyImageBtn.layer.masksToBounds = YES;
-    economyImageBtn.layer.cornerRadius = 20;
-    
-    period1Year.layer.masksToBounds = YES;
-    period1Year.layer.cornerRadius = 20;
-    
-    period2Year.layer.masksToBounds = YES;
-    period2Year.layer.cornerRadius = 20;
-    
-    period3Year.layer.masksToBounds = YES;
-    period3Year.layer.cornerRadius = 20;
-    
+    //  economyImageBtn.layer.masksToBounds = YES;
+    // economyImageBtn.layer.cornerRadius = 20;
+    /*
+     period1Year.layer.masksToBounds = YES;
+     period1Year.layer.cornerRadius = 20;
+     
+     period2Year.layer.masksToBounds = YES;
+     period2Year.layer.cornerRadius = 20;
+     
+     period3Year.layer.masksToBounds = YES;
+     period3Year.layer.cornerRadius = 20;
+     */
     priceLabel.layer.masksToBounds = YES;
     priceLabel.layer.cornerRadius = 20;
     
-    getPriceBtn.layer.masksToBounds = YES;
-    getPriceBtn.layer.cornerRadius = 20;
+    //getPriceBtn.layer.masksToBounds = YES;
+    //getPriceBtn.layer.cornerRadius = 20;
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -105,25 +111,54 @@ static CGRect oldframe;
     {
         theValueProduct = @"Premium";
         [self hideImage2];
-        premiumImageBtn.backgroundColor = [UIColor lightGrayColor];
-        standardImageBtn.backgroundColor = [UIColor colorWithRed:153.0/255.0 green:255.0/255.0 blue:100.0/255.0 alpha:1.0];
-        economyImageBtn.backgroundColor = [UIColor colorWithRed:153.0/255.0 green:255.0/255.0 blue:100.0/255.0 alpha:1.0];
+        
+        /*
+         premiumImageBtn.backgroundColor = [UIColor colorWithWhite:.8 alpha:1.0];
+         standardImageBtn.backgroundColor = [UIColor colorWithRed:153.0/255.0 green:255.0/255.0 blue:100.0/255.0 alpha:1.0];
+         economyImageBtn.backgroundColor = [UIColor colorWithRed:153.0/255.0 green:255.0/255.0 blue:100.0/255.0 alpha:1.0];
+         */
+        
+        [premiumImageBtn setBackgroundImage:[UIImage imageNamed:@"J1-green-selected@2x.png"] forState:UIControlStateNormal];
+        
+        [standardImageBtn setBackgroundImage:[UIImage imageNamed:@"J1-green-normal@2x.png"] forState:UIControlStateNormal];
+        
+        [economyImageBtn setBackgroundImage:[UIImage imageNamed:@"J1-green-normal@2x.png"] forState:UIControlStateNormal];
+        
+        
         
     } else if ([imageViewOfBig.image isEqual:[UIImage imageNamed:@"standard.jpg"]]) {
         
         theValueProduct = @"Standard";
         [self hideImage2];
-        standardImageBtn.backgroundColor = [UIColor lightGrayColor];
-        premiumImageBtn.backgroundColor = [UIColor colorWithRed:153.0/255.0 green:255.0/255.0 blue:100.0/255.0 alpha:1.0];
-        economyImageBtn.backgroundColor = [UIColor colorWithRed:153.0/255.0 green:255.0/255.0 blue:100.0/255.0 alpha:1.0];
+        
+        /*
+         standardImageBtn.backgroundColor = [UIColor lightGrayColor];
+         premiumImageBtn.backgroundColor = [UIColor colorWithRed:153.0/255.0 green:255.0/255.0 blue:100.0/255.0 alpha:1.0];
+         economyImageBtn.backgroundColor = [UIColor colorWithRed:153.0/255.0 green:255.0/255.0 blue:100.0/255.0 alpha:1.0];
+         */
+        
+        [standardImageBtn setBackgroundImage:[UIImage imageNamed:@"J1-green-selected@2x.png"] forState:UIControlStateNormal];
+        
+        [premiumImageBtn setBackgroundImage:[UIImage imageNamed:@"J1-green-normal@2x.png"] forState:UIControlStateNormal];
+        
+        [economyImageBtn setBackgroundImage:[UIImage imageNamed:@"J1-green-normal@2x.png"] forState:UIControlStateNormal];
         
     } else if([imageViewOfBig.image isEqual:[UIImage imageNamed:@"economy.jpg"]]) {
         
         theValueProduct = @"Economy";
         [self hideImage2];
-        economyImageBtn.backgroundColor = [UIColor lightGrayColor];
-        standardImageBtn.backgroundColor = [UIColor colorWithRed:153.0/255.0 green:255.0/255.0 blue:100.0/255.0 alpha:1.0];
-        premiumImageBtn.backgroundColor = [UIColor colorWithRed:153.0/255.0 green:255.0/255.0 blue:100.0/255.0 alpha:1.0];
+        
+        /*
+         economyImageBtn.backgroundColor = [UIColor lightGrayColor];
+         standardImageBtn.backgroundColor = [UIColor colorWithRed:153.0/255.0 green:255.0/255.0 blue:100.0/255.0 alpha:1.0];
+         premiumImageBtn.backgroundColor = [UIColor colorWithRed:153.0/255.0 green:255.0/255.0 blue:100.0/255.0 alpha:1.0];
+         */
+        
+        [economyImageBtn setBackgroundImage:[UIImage imageNamed:@"J1-green-selected@2x.png"] forState:UIControlStateNormal];
+        
+        [standardImageBtn setBackgroundImage:[UIImage imageNamed:@"J1-green-normal@2x.png"] forState:UIControlStateNormal];
+        
+        [premiumImageBtn setBackgroundImage:[UIImage imageNamed:@"J1-green-normal@2x.png"] forState:UIControlStateNormal];
     }
 }
 
@@ -292,112 +327,193 @@ static CGRect oldframe;
 - (IBAction)premiumSelectBtnAction:(id)sender {
     theValueProduct = @"Premium";
     //[self showPrice: theValueProduct second: theValueAmount third: theValuePeriod];
+    /*
+     premiumImageBtn.backgroundColor = [UIColor lightGrayColor];
+     standardImageBtn.backgroundColor = [UIColor colorWithRed:153.0/255.0 green:255.0/255.0 blue:100.0/255.0 alpha:1.0];
+     economyImageBtn.backgroundColor = [UIColor colorWithRed:153.0/255.0 green:255.0/255.0 blue:100.0/255.0 alpha:1.0];
+     */
+    [premiumImageBtn setBackgroundImage:[UIImage imageNamed:@"J1-green-selected@2x.png"] forState:UIControlStateNormal];
     
-    premiumImageBtn.backgroundColor = [UIColor lightGrayColor];
-    standardImageBtn.backgroundColor = [UIColor colorWithRed:153.0/255.0 green:255.0/255.0 blue:100.0/255.0 alpha:1.0];
-    economyImageBtn.backgroundColor = [UIColor colorWithRed:153.0/255.0 green:255.0/255.0 blue:100.0/255.0 alpha:1.0];
+    [standardImageBtn setBackgroundImage:[UIImage imageNamed:@"J1-green-normal@2x.png"] forState:UIControlStateNormal];
+    
+    [economyImageBtn setBackgroundImage:[UIImage imageNamed:@"J1-green-normal@2x.png"] forState:UIControlStateNormal];
+    
 }
 
 
 - (IBAction)standardSelectAction:(id)sender {
     theValueProduct = @"Standard";
     //[self showPrice: theValueProduct second: theValueAmount third: theValuePeriod];
-    standardImageBtn.backgroundColor = [UIColor lightGrayColor];
-    premiumImageBtn.backgroundColor = [UIColor colorWithRed:153.0/255.0 green:255.0/255.0 blue:100.0/255.0 alpha:1.0];
-    economyImageBtn.backgroundColor = [UIColor colorWithRed:153.0/255.0 green:255.0/255.0 blue:100.0/255.0 alpha:1.0];}
+    /*
+     standardImageBtn.backgroundColor = [UIColor lightGrayColor];
+     premiumImageBtn.backgroundColor = [UIColor colorWithRed:153.0/255.0 green:255.0/255.0 blue:100.0/255.0 alpha:1.0];
+     economyImageBtn.backgroundColor = [UIColor colorWithRed:153.0/255.0 green:255.0/255.0 blue:100.0/255.0 alpha:1.0];
+     */
+    [standardImageBtn setBackgroundImage:[UIImage imageNamed:@"J1-green-selected@2x.png"] forState:UIControlStateNormal];
+    
+    [premiumImageBtn setBackgroundImage:[UIImage imageNamed:@"J1-green-normal@2x.png"] forState:UIControlStateNormal];
+    
+    [economyImageBtn setBackgroundImage:[UIImage imageNamed:@"J1-green-normal@2x.png"] forState:UIControlStateNormal];
+    
+    
+}
 
 - (IBAction)economySelectAction:(id)sender {
     theValueProduct = @"Economy";
     //[self showPrice: theValueProduct second: theValueAmount third: theValuePeriod];
-    economyImageBtn.backgroundColor = [UIColor lightGrayColor];
-    standardImageBtn.backgroundColor = [UIColor colorWithRed:153.0/255.0 green:255.0/255.0 blue:100.0/255.0 alpha:1.0];
-    premiumImageBtn.backgroundColor = [UIColor colorWithRed:153.0/255.0 green:255.0/255.0 blue:100.0/255.0 alpha:1.0];
+    /*
+     economyImageBtn.backgroundColor = [UIColor lightGrayColor];
+     standardImageBtn.backgroundColor = [UIColor colorWithRed:153.0/255.0 green:255.0/255.0 blue:100.0/255.0 alpha:1.0];
+     premiumImageBtn.backgroundColor = [UIColor colorWithRed:153.0/255.0 green:255.0/255.0 blue:100.0/255.0 alpha:1.0];
+     */
+    [economyImageBtn setBackgroundImage:[UIImage imageNamed:@"J1-green-selected@2x.png"] forState:UIControlStateNormal];
+    
+    [standardImageBtn setBackgroundImage:[UIImage imageNamed:@"J1-green-normal@2x.png"] forState:UIControlStateNormal];
+    
+    [premiumImageBtn setBackgroundImage:[UIImage imageNamed:@"J1-green-normal@2x.png"] forState:UIControlStateNormal];
+    
 }
 
 - (IBAction)amount200BtnAction:(id)sender {
     theValueAmount = @"200";
     //[self showPrice: theValueProduct second: theValueAmount third: theValuePeriod];
+    /*
+     amount200Btn.backgroundColor = [UIColor lightGrayColor];
+     amount500Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
+     amount1000Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
+     
+     amount2000Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
+     amount3000Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
+     */
+    [amount200Btn setBackgroundImage:[UIImage imageNamed:@"200_normal_down.png"] forState:UIControlStateNormal];
+    [amount500Btn setBackgroundImage:[UIImage imageNamed:@"500_normal.png"] forState:UIControlStateNormal];
+    [amount1000Btn setBackgroundImage:[UIImage imageNamed:@"1000_normal.png"] forState:UIControlStateNormal];
+    [amount2000Btn setBackgroundImage:[UIImage imageNamed:@"2000_normal.png"] forState:UIControlStateNormal];
+    [amount3000Btn setBackgroundImage:[UIImage imageNamed:@"3000_normal.png"] forState:UIControlStateNormal];
     
-    amount200Btn.backgroundColor = [UIColor lightGrayColor];
-    amount500Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
-    amount1000Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
-    
-    amount2000Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
-    amount3000Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
 }
 
 - (IBAction)amount500BtnAction:(id)sender {
     theValueAmount = @"500";
     //[self showPrice: theValueProduct second: theValueAmount third: theValuePeriod];
+    /*
+     amount500Btn.backgroundColor = [UIColor lightGrayColor];
+     amount200Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
+     amount1000Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
+     amount2000Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
+     amount3000Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
+     */
     
-    amount500Btn.backgroundColor = [UIColor lightGrayColor];
-    amount200Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
-    amount1000Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
-    amount2000Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
-    amount3000Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
+    [amount500Btn setBackgroundImage:[UIImage imageNamed:@"500_normal_down.png"] forState:UIControlStateNormal];
+    [amount200Btn setBackgroundImage:[UIImage imageNamed:@"200_normal.png"] forState:UIControlStateNormal];
+    [amount1000Btn setBackgroundImage:[UIImage imageNamed:@"1000_normal.png"] forState:UIControlStateNormal];
+    [amount2000Btn setBackgroundImage:[UIImage imageNamed:@"2000_normal.png"] forState:UIControlStateNormal];
+    [amount3000Btn setBackgroundImage:[UIImage imageNamed:@"3000_normal.png"] forState:UIControlStateNormal];
+    
 }
 
 - (IBAction)amount1000BtnAction:(id)sender {
     theValueAmount = @"1000";
     //[self showPrice: theValueProduct second: theValueAmount third: theValuePeriod];
-    
-    amount1000Btn.backgroundColor = [UIColor lightGrayColor];
-    amount500Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
-    amount200Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
-    
-    amount2000Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
-    amount3000Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
+    /*
+     amount1000Btn.backgroundColor = [UIColor lightGrayColor];
+     amount500Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
+     amount200Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
+     
+     amount2000Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
+     amount3000Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
+     */
+    [amount1000Btn setBackgroundImage:[UIImage imageNamed:@"1000_normal_down.png"] forState:UIControlStateNormal];
+    [amount500Btn setBackgroundImage:[UIImage imageNamed:@"500_normal.png"] forState:UIControlStateNormal];
+    [amount200Btn setBackgroundImage:[UIImage imageNamed:@"200_normal.png"] forState:UIControlStateNormal];
+    [amount2000Btn setBackgroundImage:[UIImage imageNamed:@"2000_normal.png"] forState:UIControlStateNormal];
+    [amount3000Btn setBackgroundImage:[UIImage imageNamed:@"3000_normal.png"] forState:UIControlStateNormal];
 }
 
 - (IBAction)amount2000Action:(id)sender {
     theValueAmount = @"2000";
     //[self showPrice: theValueProduct second: theValueAmount third: theValuePeriod];
+    /*
+     amount2000Btn.backgroundColor = [UIColor lightGrayColor];
+     amount500Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
+     amount1000Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
+     
+     amount200Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
+     amount3000Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
+     */
     
-    amount2000Btn.backgroundColor = [UIColor lightGrayColor];
-    amount500Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
-    amount1000Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
-    
-    amount200Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
-    amount3000Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
-    
-}
+    [amount2000Btn setBackgroundImage:[UIImage imageNamed:@"2000_normal_down.png"] forState:UIControlStateNormal];
+    [amount500Btn setBackgroundImage:[UIImage imageNamed:@"500_normal.png"] forState:UIControlStateNormal];
+    [amount1000Btn setBackgroundImage:[UIImage imageNamed:@"1000_normal.png"] forState:UIControlStateNormal];
+    [amount200Btn setBackgroundImage:[UIImage imageNamed:@"200_normal.png"] forState:UIControlStateNormal];
+    [amount3000Btn setBackgroundImage:[UIImage imageNamed:@"3000_normal.png"] forState:UIControlStateNormal];}
 
 - (IBAction)amount3000Action:(id)sender
 {
     theValueAmount = @"3000";
     //[self showPrice: theValueProduct second: theValueAmount third: theValuePeriod];
-    
-    amount3000Btn.backgroundColor = [UIColor lightGrayColor];
-    amount500Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
-    amount1000Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
-    amount2000Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
-    amount200Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
+    /*
+     amount3000Btn.backgroundColor = [UIColor lightGrayColor];
+     amount500Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
+     amount1000Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
+     amount2000Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
+     amount200Btn.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:204.0/255.0 blue:51.0/255.0 alpha:1.0];
+     */
+    [amount3000Btn setBackgroundImage:[UIImage imageNamed:@"3000_normal_down.png"] forState:UIControlStateNormal];
+    [amount500Btn setBackgroundImage:[UIImage imageNamed:@"500_normal.png"] forState:UIControlStateNormal];
+    [amount1000Btn setBackgroundImage:[UIImage imageNamed:@"1000_normal.png"] forState:UIControlStateNormal];
+    [amount2000Btn setBackgroundImage:[UIImage imageNamed:@"2000_normal.png"] forState:UIControlStateNormal];
+    [amount200Btn setBackgroundImage:[UIImage imageNamed:@"200_normal.png"] forState:UIControlStateNormal];
 }
 
 - (IBAction)period1YearAction:(id)sender {
     theValuePeriod = @"1 Year";
     //[self showPrice: theValueProduct second: theValueAmount third: theValuePeriod];
+    /*
+     period1Year.backgroundColor = [UIColor lightGrayColor];
+     period2Year.backgroundColor = [UIColor colorWithRed:102.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0];
+     period3Year.backgroundColor = [UIColor colorWithRed:102.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0];
+     */
     
-    period1Year.backgroundColor = [UIColor lightGrayColor];
-    period2Year.backgroundColor = [UIColor colorWithRed:102.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0];
-    period3Year.backgroundColor = [UIColor colorWithRed:102.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0];
+    [period1Year setBackgroundImage:[UIImage imageNamed:@"J1-blue-selected@2x.png"] forState:UIControlStateNormal];
+    
+    [period2Year setBackgroundImage:[UIImage imageNamed:@"J1-blue-normal@2x.png"] forState:UIControlStateNormal];
+    
+    [period3Year setBackgroundImage:[UIImage imageNamed:@"J1-blue-normal@2x.png"] forState:UIControlStateNormal];
 }
 
 - (IBAction)period2YearAction:(id)sender {
     theValuePeriod = @"2 Year";
     //[self showPrice: theValueProduct second: theValueAmount third: theValuePeriod];
+    /*
+     period2Year.backgroundColor = [UIColor lightGrayColor];
+     period1Year.backgroundColor = [UIColor colorWithRed:102.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0];
+     period3Year.backgroundColor = [UIColor colorWithRed:102.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0];
+     */
     
-    period2Year.backgroundColor = [UIColor lightGrayColor];
-    period1Year.backgroundColor = [UIColor colorWithRed:102.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0];
-    period3Year.backgroundColor = [UIColor colorWithRed:102.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0];
+    [period2Year setBackgroundImage:[UIImage imageNamed:@"J1-blue-selected@2x.png"] forState:UIControlStateNormal];
+    
+    [period1Year setBackgroundImage:[UIImage imageNamed:@"J1-blue-normal@2x.png"] forState:UIControlStateNormal];
+    
+    [period3Year setBackgroundImage:[UIImage imageNamed:@"J1-blue-normal@2x.png"] forState:UIControlStateNormal];
+    
 }
 
 - (IBAction)period3YearAction:(id)sender {
     theValuePeriod = @"3 Year";
     //[self showPrice: theValueProduct second: theValueAmount third: theValuePeriod];
-    period3Year.backgroundColor = [UIColor lightGrayColor];
-    period2Year.backgroundColor = [UIColor colorWithRed:102.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0];
-    period1Year.backgroundColor = [UIColor colorWithRed:102.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0];
+    /*
+     period3Year.backgroundColor = [UIColor lightGrayColor];
+     period2Year.backgroundColor = [UIColor colorWithRed:102.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0];
+     period1Year.backgroundColor = [UIColor colorWithRed:102.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0];
+     */
+    
+    [period3Year setBackgroundImage:[UIImage imageNamed:@"J1-blue-selected@2x.png"] forState:UIControlStateNormal];
+    
+    [period2Year setBackgroundImage:[UIImage imageNamed:@"J1-blue-normal@2x.png"] forState:UIControlStateNormal];
+    
+    [period1Year setBackgroundImage:[UIImage imageNamed:@"J1-blue-normal@2x.png"] forState:UIControlStateNormal];
+    
 }
 
 - (void)viewWillLayoutSubviews
@@ -407,18 +523,20 @@ static CGRect oldframe;
         UIInterfaceOrientation orient = [UIApplication sharedApplication].statusBarOrientation;
         
         if(orient == UIInterfaceOrientationLandscapeLeft) {
+            
             selectBtn.transform = CGAffineTransformMakeRotation(-M_PI/2);
             cancelBtn.transform = CGAffineTransformMakeRotation(-M_PI/2);
             imageViewOfBig.transform = CGAffineTransformMakeRotation(-M_PI/2);
-
             
         }else if(orient == UIInterfaceOrientationLandscapeRight) {
+            
             selectBtn.transform = CGAffineTransformMakeRotation(M_PI/2);
             cancelBtn.transform = CGAffineTransformMakeRotation(M_PI/2);
             imageViewOfBig.transform = CGAffineTransformMakeRotation(M_PI/2);
             
             
         }else if(orient == UIInterfaceOrientationPortraitUpsideDown) {
+            
             selectBtn.transform = CGAffineTransformMakeRotation(-M_PI);
             cancelBtn.transform = CGAffineTransformMakeRotation(-M_PI);
             imageViewOfBig.transform = CGAffineTransformMakeRotation(-M_PI);
